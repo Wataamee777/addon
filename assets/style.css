@@ -1,0 +1,97 @@
+/* 全体スタイル */
+body {
+  background-color: #111;
+  color: #eee;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header, footer {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.2em;
+}
+
+header p {
+  color: #bbb;
+}
+
+/* CSE検索バー周り（オプションで調整可能） */
+.gsc-control-cse, .gsc-control-searchbox-only {
+  background-color: #111;
+  color: #eee;
+  border: none;
+  padding: 1em 0;
+  font-family: inherit;
+}
+
+input.gsc-input {
+  background-color: #222 !important;
+  color: #eee !important;
+  border: none !important;
+}
+
+.gsc-search-button {
+  background-color: #4caf50 !important;
+  border: none !important;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  color: white !important;
+}
+
+/* モジュール一覧 */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.module {
+  background-color: #222;
+  padding: 1em;
+  margin: 1.5em 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+}
+
+.module h3 {
+  margin-top: 0;
+  color: #a0ffa0;
+}
+
+.module-link {
+  display: inline-block;
+  margin-top: 0.8em;
+  padding: 0.6em 1.2em;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.module-link:hover {
+  background-color: #45a049;
+}
+
+footer {
+  margin-top: 3em;
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+  .module {
+    padding: 1em 0.6em;
+  }
+}
